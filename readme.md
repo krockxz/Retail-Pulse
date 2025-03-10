@@ -5,12 +5,6 @@
 
 This project is an image processing service for Retail Pulse that handles the processing of images collected from stores. The service allows users to submit jobs with a list of images and store details. Each image is processed to calculate its perimeter (2 * [Height + Width]) and simulate GPU processing by introducing a random sleep time between 0.1 to 0.4 seconds. The results are stored at an image level and associated with a store.
 
-### Key Features:
-- **Job Submission**: Allows users to submit jobs with image URLs and store details.
-- **Job Processing**: The service calculates the perimeter of each image and simulates GPU processing with random delays.
-- **Job Status**: Provides an API to check the status of a job (completed, ongoing, or failed).
-- **Error Handling**: Supports job failure scenarios such as invalid image URLs or missing store IDs.
-
 ## Assumptions
 
 - The image dimensions (height and width) are simulated as 100 and 200, respectively. In a real-world scenario, these values would be dynamically retrieved from the image itself.
@@ -143,5 +137,4 @@ If given more time, the following improvements could be made to the project:
 - **Job Queueing**: Introduce a queue system (e.g., using `bull` or `kue`) to manage job submissions and ensure that jobs are processed efficiently.
 - **Testing**: Implement unit and integration tests using a testing framework like `jest` to ensure the reliability of the service.
 - **Scalability**: Implement horizontal scaling with load balancing to handle large volumes of incoming jobs concurrently.
-
 ```
