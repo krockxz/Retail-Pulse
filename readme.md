@@ -60,7 +60,7 @@ curl -X POST http://localhost:3000/api/submit/ \
         "count": 2,
         "visits": [
             {
-                "store_id": "S00339218",
+                "store_id": "RP00001",
                 "image_url": [
                     "https://www.gstatic.com/webp/gallery/2.jpg",
                     "https://www.gstatic.com/webp/gallery/3.jpg"
@@ -68,7 +68,7 @@ curl -X POST http://localhost:3000/api/submit/ \
                 "visit_time": "2025-03-10T12:00:00"
             },
             {
-                "store_id": "S01408764",
+                "store_id": "RP00002",
                 "image_url": [
                     "https://www.gstatic.com/webp/gallery/3.jpg"
                 ],
@@ -95,7 +95,7 @@ To simulate a job failure (e.g., invalid image URL), modify the job submission t
     "count": 2,
     "visits": [
         {
-            "store_id": "S00339218",
+            "store_id": "RP00001",
             "image_url": [
                 "https://www.invalid-url.com/2.jpg",
                 "https://www.gstatic.com/webp/gallery/3.jpg"
@@ -103,7 +103,7 @@ To simulate a job failure (e.g., invalid image URL), modify the job submission t
             "visit_time": "2025-03-10T12:00:00"
         },
         {
-            "store_id": "S01408764",
+            "store_id": "RP00005",
             "image_url": [
                 "https://www.gstatic.com/webp/gallery/3.jpg"
             ],
